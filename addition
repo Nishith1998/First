@@ -1,4 +1,5 @@
-lxi h,1000h
+ ..
+ lxi h,1000h
 
 mov a,m
 
