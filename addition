@@ -1,0 +1,18 @@
+lxi h,1000h
+
+mov a,m
+
+call adit
+hlt
+
+adit: lxi h,1001h
+      mov c,m
+      next: mov d,a 
+      inr d
+      lxi h,1000h
+      mov a,m
+      add d
+      dcr c
+      jnz next
+      sta 2000h
+      ret
